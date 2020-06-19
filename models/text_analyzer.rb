@@ -17,7 +17,7 @@ class TextAnalyzer
   end
 
   def count_of_consonants
-    @text.scan(/[bcdfghjklmnpqrstvwxyz]/).count
+    @text.downcase.scan(/[bcdfghjklmnpqrstvwxyz]/).count
   end
 
   def most_used_letter
