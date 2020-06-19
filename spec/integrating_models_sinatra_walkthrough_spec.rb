@@ -21,7 +21,7 @@ describe App do
       click_button "submit"
       expect(page.status_code).to eq(200)
       expect(page).to have_text("Number of Words: 4")
-      expect(page).to have_text("Vowels:5")
+      expect(page).to have_text("Vowels: 5")
       expect(page).to have_text("Consonants: 10")
       expect(page).to have_text("Most Common Letter: G, used 3 times")
     end
